@@ -1,0 +1,12 @@
+node_modules/
+qa-videos/
+qa/out/
+qa/results*.json
+qa/bench-log*.txt
+qa/results-partial*.json
+test-results/
+.env
+*.pem
+*.token
+.DS_Store
+Thumbs.db

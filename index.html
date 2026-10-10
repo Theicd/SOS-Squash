@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0d0d12" />
+  <title>SOS Squash — כיווץ וידאו</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="importmap">
+  { "imports": { "mediabunny": "./vendor/mediabunny.min.mjs" } }
+  </script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="brand">
+        <strong>SOS Squash</strong>
+        <span>כיווץ אוטומטי · הקובץ נשאר במכשיר</span>
+      </div>
+      <span class="cap" id="capBadge" data-testid="cap-badge">בודק דפדפן…</span>
+    </header>
+
+    <label class="drop" id="dropZone" data-testid="drop-zone">
+      <input type="file" id="fileInput" data-testid="file-input" accept="video/*" multiple hidden />
+      <span class="drop-icon">⬇</span>
+      <strong>גרור לכאן וידאו</strong>
+      <span>או לחץ לבחירה · הכיווץ אוטומטי לגמרי</span>
+    </label>
+
+    <section class="bar bar-simple">
+      <p class="hint" id="autoHint">
+        בוחר לבד רזולוציה וקצב · שומר על הקול · מדלג אם הקובץ כבר קטן מספיק
+      </p>
+      <button type="button" class="primary" id="btnCompress" data-testid="btn-compress" disabled>כווץ</button>
+    </section>
+
+    <section class="list" id="fileList" data-testid="file-list"></section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

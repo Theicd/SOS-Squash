@@ -1,0 +1,21 @@
+{
+  "name": "sos-squash-lab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node serve-lab.mjs",
+    "bench": "node qa/run-bench.mjs",
+    "test": "node qa/ui-smoke.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mediabunny": "^1.60.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49"
+  },
+  "type": "module"
+}
